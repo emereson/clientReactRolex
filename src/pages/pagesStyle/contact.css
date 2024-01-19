@@ -1,0 +1,176 @@
+.contact__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.contact__frontPage {
+    position: relative;
+    width: 100%;
+    min-height: 100vh !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__frontPage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    filter: brightness(0.6);
+}
+
+.contactFrontPage__texts {
+    position: absolute;
+}
+
+
+.contact__frontPage__teamImages {
+    position: absolute;
+    right: 5vw;
+    width: 30vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__frontPage__teamImages img {
+    top: 0;
+    position: absolute;
+    width: fit-content;
+    filter: brightness(0.9) !important;
+}
+
+.contact__frontPage__teamImages img:nth-child(1) {
+    left: 0;
+    z-index: 1;
+    transform: rotateZ(-35deg);
+    animation: imgAnimation 1s both;
+}
+
+.contact__frontPage__teamImages img:nth-child(2) {
+    top: -15%;
+    z-index: 2;
+    transform: rotateZ(0);
+    animation: imgAnimation 1.5s both;
+}
+
+.contact__frontPage__teamImages img:nth-child(3) {
+    right: 0;
+    z-index: 1;
+    transform: rotateZ(35deg);
+    animation: imgAnimation 2s both;
+}
+
+.contact__frontPage__teamImages img:nth-child(4) {
+    z-index: 3;
+    top: 70%;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    animation: imgAnimation 2.5s both;
+
+}
+
+/* contact__form */
+.contact__formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.contact__formContainer img {
+    width: 30%;
+}
+
+
+.contact__form {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-beige);
+    gap: 1em;
+}
+
+.contact__form h2 {
+    width: 100%;
+    color: var(--text-color-gold);
+    text-align: center;
+}
+
+.contactForm__Div {
+    position: relative;
+    width: calc(50% - 1em);
+    margin-top: 1em;
+}
+
+.contactForm__DivLabel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    color: #f1eee3b1;
+    transition: 0.4s ease;
+}
+
+.contactForm__DivLabel__animation {
+    top: -15px;
+    color: var(--text-color-beige);
+    font-size: 12px;
+    transition: 0.4s ease;
+}
+
+.contactForm__DivLabel__animation2 {
+    top: -30px;
+    color: var(--text-color-beige);
+    font-size: 12px;
+    transition: 0.4s ease;
+
+}
+
+.contactForm__Div input {
+    width: 100%;
+    font-size: 18px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--text-color-beige);
+    padding: 4px;
+    color: var(--text-color-beige);
+}
+
+.contactForm__Div textarea {
+    width: 100%;
+    font-size: 18px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--text-color-beige);
+    padding: 4px;
+    color: var(--text-color-beige);
+}
+
+.contact__form button {
+    padding: 0.5em 1em;
+    background-color: var(--text-color-beige);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: var(--text-color-black);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact__form button:hover {
+    background-color: var(--text-color-gold);
+    transition: 0.3s ease;
+}

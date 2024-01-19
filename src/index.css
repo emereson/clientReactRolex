@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  position: fixed;
+  width: 0.4em;
+  height: 0.5em;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #F1192F;
+  border-radius: 1em;
+}
+
+*::-webkit-scrollbar-thumb:vertical {
+  height: 1vw;
+}
+
+:root {
+  --body-black: #000000;
+  --body-gold: #c4ac6c;
+  --body-white: #ffffff;
+  --body-gray: #060608;
+  --body-red: #F1192F;
+  --body-beige: #f1eee3;
+  --body-darkBlue: #000000;
+  --text-color-black: #0b0b0b;
+  --text-color-beige: #f1eee3;
+  --text-color-white: #ffffff;
+  --text-color-gray: rgb(16, 23, 23);
+  --text-color-blue: #55cfc5;
+  --text-color-gold: #c4ab67;
+
+
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  min-width: 360px;
+  font-family: "IBM Plex Serif", serif;
+  background-color: #f8f8f8;
+  letter-spacing: 0.3px;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+li,
+:link {
+  list-style: none;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+input {
+  outline: none;
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  padding: 0;
+}

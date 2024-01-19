@@ -1,0 +1,89 @@
+.oneSectionFrontPage__titleVideoContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3em;
+    padding: 0 45px;
+    padding-top: 3em;
+}
+
+.oneSectionFrontPage__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.oneSectionFrontPage__videosContainer {
+    position: relative;
+    width: 45%;
+    height: 50%;
+    animation: textAnimation 1s forwards;
+
+}
+
+.oneSectionFrontPage__videoBlur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(100px);
+    border-radius: 0.5em;
+    opacity: 1;
+    color: transparent;
+
+}
+
+.oneSectionFrontPage__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    border-radius: 0.5em;
+
+}
+
+.oneSectionFrontPage__titleContainer {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    color: var(--text-color-white);
+    padding-top: 8vw;
+    animation: textAnimation 1.5s forwards;
+}
+
+
+
+.oneSectionFrontPage__titleContainer h1 {
+    color: var(--text-color-gold);
+    z-index: 2;
+}
+
+.oneSectionFrontPage__titleContainer div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.oneSectionFrontPage__titleContainer p {
+    color: var(--text-color-beige);
+    font-size: 0.9em;
+    z-index: 2;
+}
