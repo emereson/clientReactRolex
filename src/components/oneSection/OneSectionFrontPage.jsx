@@ -9,7 +9,7 @@ const OneSectionFrontPage = ({ section }) => {
         src={section.sectionImg}
         alt=""
       />
-      <span className="film-effect"></span>
+
       <article className="oneSectionFrontPage__titleContainer">
         <h1>{section?.title}</h1>
         {section?.sectionDescriptions.map((description) => (
