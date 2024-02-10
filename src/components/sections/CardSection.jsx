@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import './sectionsStyle/cardSection.css';
+import ReactPlayer from 'react-player';
 
 const CardSection = ({ section, index }) => {
   const [viewTitle, setViewTitle] = useState(false);
@@ -30,9 +32,7 @@ const CardSection = ({ section, index }) => {
   return (
     <div
       ref={ref}
-      className={`cardSection__container ${
-        viewTitle ? 'cardSection__viewTitle' : ''
-      } `}
+      className={`cardSection__container  `}
       onMouseOver={() => setViewTitle(true)}
       onMouseOut={() => setViewTitle(false)}
       style={
@@ -43,29 +43,21 @@ const CardSection = ({ section, index }) => {
           : null
       }
     >
-      <img src={section.sectionImg} alt={section.title} />
-      <video
-        ref={videoBlurRef}
-        muted
-        loop
-        className={`cardSection__blurVideo ${
-          !viewTitle ? 'close__blurVideo' : ''
-        }`}
-      >
-        <source src={section.linkVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <video
-        ref={videoRef}
-        muted
-        loop
-        className={`cardSection__video  ${
-          !viewTitle ? 'close__video' : ''
-        }`}
-      >
-        <source src={section.linkVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <img
+        src={section.sectionImg}
+        alt={section.title}
+        style={viewTitle ? { opacity: '0' } : { opacity: '1' }}
+      />
+
+      <ReactPlayer
+        className="cardSection__video"
+        playing={viewTitle}
+        volume={0}
+        url={section.linkVideo}
+        controls={false}
+        loop={true}
+        width="100%"
+      />
 
       <Link
         to={`/section/${section.id}`}

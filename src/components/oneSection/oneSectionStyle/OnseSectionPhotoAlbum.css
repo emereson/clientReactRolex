@@ -36,8 +36,8 @@
 }
 
 .oneSection__viewImgDiv {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -54,15 +54,14 @@
 .oneSection__viewImgContainer img {
     position: absolute;
     opacity: 0;
-    width: 100%;
-    height: auto;
-    object-fit: unset;
+    height: 100%;
+    object-fit: contain !important;
     transition: 0.5s ease;
 }
 
 .oneSection__viewImgContainer i {
     color: var(--text-color-white);
-    font-size: 2em;
+    font-size: 2.5em;
     cursor: pointer;
 }
 

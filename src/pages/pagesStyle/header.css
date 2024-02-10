@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 6em;
+    height: 7em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,7 @@
 .header__logo {
     position: absolute;
     left: 2em;
-    width: 8em;
+    width: 11em;
     height: 100%;
     object-fit: contain;
 }
@@ -40,8 +40,6 @@
 }
 
 .header__ul li {
-
-    font-size: 1em;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
@@ -53,7 +51,7 @@
 }
 
 .header__ul a {
-    font-size: 15px;
+    font-size: 20px;
     color: var(--text-color-beige);
     font-weight: 600;
     transition: 0.3s ease;
@@ -74,7 +72,7 @@
 }
 
 .header__iconsContainer a {
-    font-size: 22px;
+    font-size: 28px;
     color: var(--text-color-beige);
     cursor: pointer;
 }

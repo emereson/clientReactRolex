@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './oneSectionStyle/cardExample.css';
+import './oneSectionStyle/cardSectionVideo.css';
 import { useInView } from 'react-intersection-observer';
 
 const CardSectionVideo = ({ video, index }) => {

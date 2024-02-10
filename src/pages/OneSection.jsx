@@ -5,11 +5,12 @@ import './pagesStyle/oneSection.css';
 import OneSectionFrontPage from '../components/oneSection/OneSectionFrontPage';
 import CardSectionVideo from '../components/oneSection/CardSectionVideo';
 import OnseSectionPhotoAlbum from '../components/oneSection/OnseSectionPhotoAlbum';
+import OnseSectionGallery from '../components/oneSection/OnseSectionGallery';
 
 const OneSection = () => {
   const { id } = useParams();
   const [section, setSection] = useState();
-  const [videos, setVideos] = useState(true);
+  const [select, setSelect] = useState('videos');
 
   const [plaVideo, setplaVideo] = useState(false);
 
@@ -34,37 +35,18 @@ const OneSection = () => {
   return (
     plaVideo && (
       <div className="oneSection__container">
-        {section ? <OneSectionFrontPage section={section} /> : ''}
-        <section className="oneSection__exampleContianer">
-          <h2
-            style={
-              videos
-                ? {
-                    color: 'var(--text-color-gold)',
-                    borderBottom: '1px solid var(--text-color-gold)',
-                  }
-                : { color: 'white' }
-            }
-            onClick={() => setVideos(true)}
-          >
-            Videos
-          </h2>
-          <h2
-            style={
-              videos
-                ? { color: 'white' }
-                : {
-                    color: 'var(--text-color-gold)',
-                    borderBottom: '1px solid var(--text-color-gold)',
-                  }
-            }
-            onClick={() => setVideos(false)}
-          >
-            Photo Album
-          </h2>
-        </section>
+        {section ? (
+          <OneSectionFrontPage
+            section={section}
+            setSelect={setSelect}
+            select={select}
+          />
+        ) : (
+          ''
+        )}
+
         <section className="oneSection__videosPhotosContainer">
-          {videos ? (
+          {select === 'videos' ? (
             <div className="oneSection__videosContainer">
               {section?.sectionVideos
                 .sort((a, b) => new Date(a.id) - new Date(b.id))
@@ -76,8 +58,10 @@ const OneSection = () => {
                   />
                 ))}
             </div>
-          ) : (
+          ) : select === 'album' ? (
             <OnseSectionPhotoAlbum section={section} />
+          ) : (
+            <OnseSectionGallery section={section} />
           )}
         </section>
       </div>

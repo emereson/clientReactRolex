@@ -7,6 +7,7 @@ import Header from './pages/Header';
 import Sections from './pages/Sections';
 import OneSection from './pages/OneSection';
 import Contact from './pages/Contact';
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/section/:id" element={<OneSection />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

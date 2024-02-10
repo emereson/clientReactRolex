@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className="header__container">
       <Link to="/" className="header__logo">
-        <img src="/logo.png" alt="logo Creative Art Video" />
+        <img src="/logo2.png" alt="logo Creative Art Video" />
       </Link>
       <ul className="header__ul">
         <li>
