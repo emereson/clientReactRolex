@@ -211,6 +211,7 @@
 .sections__notesVisible p {
     font-size: 1.8em;
     text-align: center;
+    color: var(--text-color-gray);
 }
 
 
@@ -290,4 +291,67 @@
 .sectionsLetsWork__article a:hover {
     color: var(--text-color-gold);
     border-bottom: 2px solid var(--text-color-gold);
+}
+
+
+@media(max-width:900px) {
+
+    .sections__frontPage__texts p {
+        font-size: 6vw;
+    }
+
+    .sections__frontPage__texts h1 {
+        font-size: 8vw;
+    }
+
+    .sections__frontPage__teamImages {
+        display: none;
+    }
+
+    .sections__servicesContainer h2 {
+        font-size: 6vw;
+    }
+
+    .sections__articleTwo {
+        padding: 0;
+    }
+
+    .sections__notesContainer {
+        height: 70vh;
+    }
+
+    .sections__notesVisible {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .sections__notesVisible img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .sections__notesVisible div {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sections__notesVisible p {
+        font-size: 5vw;
+    }
+
+    .sectionsNotes__arrowsContainer {
+        width: 100%;
+        right: 0;
+    }
+
+    .sectionsNotes__arrowsContainer img {
+        width: 8vw;
+    }
+
+    .sectionsNotes__arrowsContainer span {
+        font-size: 5vw;
+    }
 }

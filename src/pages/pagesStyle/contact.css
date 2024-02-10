@@ -1,6 +1,6 @@
 .contact__container {
     width: 100%;
-    height: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -11,7 +11,7 @@
 .contact__frontPage {
     position: relative;
     width: 100%;
-    min-height: 100vh !important;
+    height: 100vh !important;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -28,8 +28,37 @@
 
 .contactFrontPage__texts {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-white);
+    gap: 1em;
 }
 
+.contactFrontPage__texts h1 {
+    font-size: 2em;
+    font-weight: 600;
+
+}
+
+.contactFrontPage__texts h2 {
+    font-size: 3.5em;
+    color: var(--text-color-gold);
+}
+
+.contactFrontPage__texts p {
+    font-size: 1.2em;
+
+}
+
+.contactFrontPage__texts span {
+    margin-top: 2em;
+}
+
+.contactFrontPage__texts img {
+    animation: rowAnimation 2s infinite;
+}
 
 .contact__frontPage__teamImages {
     position: absolute;
@@ -82,6 +111,7 @@
 /* contact__form */
 .contact__formContainer {
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -99,7 +129,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: var(--text-color-beige);
+    color: var(--text-color-gray);
     gap: 1em;
 }
 
@@ -107,6 +137,7 @@
     width: 100%;
     color: var(--text-color-gold);
     text-align: center;
+
 }
 
 .contactForm__Div {
@@ -119,34 +150,36 @@
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 14px;
-    color: #f1eee3b1;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--text-color-gray);
     transition: 0.4s ease;
 }
 
 .contactForm__DivLabel__animation {
-    top: -15px;
-    color: var(--text-color-beige);
-    font-size: 12px;
+    top: -1.2em;
+    color: var(--text-color-gray);
+    font-size: 0.9em;
     transition: 0.4s ease;
 }
 
 .contactForm__DivLabel__animation2 {
     top: -30px;
-    color: var(--text-color-beige);
-    font-size: 12px;
+    color: var(--text-color-gray);
+    font-size: 0.9em;
+
     transition: 0.4s ease;
 
 }
 
 .contactForm__Div input {
     width: 100%;
-    font-size: 18px;
+    font-size: 1.2em;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid var(--text-color-beige);
+    border-bottom: 1px solid var(--text-color-gray);
     padding: 4px;
-    color: var(--text-color-beige);
+    color: var(--text-color-gray);
 }
 
 .contactForm__Div textarea {
@@ -154,18 +187,18 @@
     font-size: 18px;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid var(--text-color-beige);
+    border-bottom: 1px solid var(--text-color-gray);
     padding: 4px;
-    color: var(--text-color-beige);
+    color: var(--text-color-gray);
 }
 
 .contact__form button {
     padding: 0.5em 1em;
-    background-color: var(--text-color-beige);
+    background-color: var(--text-color-black);
     font-size: 16px;
     font-weight: 600;
     border-radius: 5px;
-    color: var(--text-color-black);
+    color: var(--text-color-white);
     cursor: pointer;
     transition: 0.3s ease;
 }

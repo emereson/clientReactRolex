@@ -15,7 +15,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #F1192F;
+  background-color: #000000;
   border-radius: 1em;
 }
 
@@ -35,7 +35,7 @@
   --text-color-black: #0b0b0b;
   --text-color-beige: #f1eee3;
   --text-color-white: #ffffff;
-  --text-color-gray: rgb(16, 23, 23);
+  --text-color-gray: rgb(58, 58, 58);
   --text-color-blue: #55cfc5;
   --text-color-gold: #c4ab67;
 

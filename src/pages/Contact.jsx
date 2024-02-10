@@ -48,14 +48,21 @@ const Contact = () => {
         <span className="film-effect"></span>
         <img src="/15.jpg" alt="contact creative art video" />
         <article className="contactFrontPage__texts">
-          <h1>SAY HELLO!</h1>
+          <h1>Are you ready to reserve your date?</h1>
+          <h2>Give us all the Details!</h2>
+          <p>
+            WE WILL CUSTOMIZE A PACKAGE TO SUIT YOUR EVENT PERFECTLY
+          </p>
+          <span>
+            <img src="/flecha.png" alt="flecha" />
+          </span>
         </article>
-        <article className="contact__frontPage__teamImages">
+        {/* <article className="contact__frontPage__teamImages">
           <img src="./02-min.jpg" alt="image 1" />
           <img src="./16-min.jpg" alt="image 2" />
           <img src="./4.jpg" alt="image 3" />
           <img src="./5.jpg" alt="image 4" />
-        </article>
+        </article> */}
       </section>
       <section className="contact__formContainer">
         <img src="./16-min.jpg" alt="image 2" />

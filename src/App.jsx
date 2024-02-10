@@ -11,7 +11,7 @@ import Footer from './pages/Footer';
 
 function App() {
   return (
-    <div className="app_container">
+    <div className="app_container" id="app">
       <ToastContainer />
       <Header />
       <Routes>
