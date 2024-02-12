@@ -199,6 +199,26 @@
     .header__container {
         justify-content: start;
     }
+
+    .header__menuContainer {
+        padding: 1.5vw;
+    }
+
+    .header__ul {
+        gap: 2vw;
+    }
+
+    .header__container a {
+        font-size: 2.5vw;
+    }
+
+    .header__iconsContainer {
+        gap: 2vw;
+    }
+
+    .header__iconsContainer a {
+        font-size: 3.5vw;
+    }
 }
 
 .headerWhite__container span {

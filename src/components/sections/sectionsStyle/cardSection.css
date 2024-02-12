@@ -66,3 +66,19 @@
         width: 100%;
     }
 }
+
+@media(max-height:600px) {
+    .cardSection__container {
+        width: calc(100% /3 - 10px);
+    }
+
+    .cardSection__container {
+        min-height: 0px;
+        height: 18vw;
+    }
+
+    .cardSection__link {
+        font-size: 1.8vw;
+    }
+
+}

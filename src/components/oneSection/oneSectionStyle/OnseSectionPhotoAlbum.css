@@ -91,3 +91,21 @@
 
 
 }
+
+@media(max-height:600px) {
+    .oneSection__photosContainer {
+        padding: 3vw;
+    }
+
+    .oneSection__photosGrid {
+        display: grid !important;
+        flex-direction: column;
+        gap: 0.5vw;
+        width: 100%;
+    }
+
+    .oneSection__photosGrid__div {
+        height: auto;
+        width: auto;
+    }
+}

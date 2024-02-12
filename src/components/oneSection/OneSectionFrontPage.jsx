@@ -21,7 +21,6 @@ const OneSectionFrontPage = ({ section, setSelect, select }) => {
             loop={true}
             width="100%"
             height="100%"
-            responsive={true}
           />
         </article>
         <article className="oneSectionFrontPage__titleContainer">

@@ -1,7 +1,7 @@
 .cardSectionVideo__container {
     position: relative;
     width: 100%;
-    height: 40vw;
+    height: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -112,5 +112,15 @@
 
     .cardSectionVideo__container h2 {
         font-size: 4vw;
+    }
+}
+
+@media(max-height:600px) {
+    .cardSectionVideo__container {
+        height: 50vw;
+    }
+
+    .cardSectionVideo__container h2 {
+        font-size: 2vw;
     }
 }
