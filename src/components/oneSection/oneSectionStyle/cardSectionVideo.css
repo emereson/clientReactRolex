@@ -104,3 +104,13 @@
 .cardSectionVideo__imgPlayVideo i {
     font-size: 2.5em;
 }
+
+@media(max-width:900px) {
+    .cardSectionVideo__container {
+        height: 35vh;
+    }
+
+    .cardSectionVideo__container h2 {
+        font-size: 4vw;
+    }
+}

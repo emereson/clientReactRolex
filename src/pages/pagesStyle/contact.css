@@ -60,53 +60,6 @@
     animation: rowAnimation 2s infinite;
 }
 
-.contact__frontPage__teamImages {
-    position: absolute;
-    right: 5vw;
-    width: 30vw;
-    height: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact__frontPage__teamImages img {
-    top: 0;
-    position: absolute;
-    width: fit-content;
-    filter: brightness(0.9) !important;
-}
-
-.contact__frontPage__teamImages img:nth-child(1) {
-    left: 0;
-    z-index: 1;
-    transform: rotateZ(-35deg);
-    animation: imgAnimation 1s both;
-}
-
-.contact__frontPage__teamImages img:nth-child(2) {
-    top: -15%;
-    z-index: 2;
-    transform: rotateZ(0);
-    animation: imgAnimation 1.5s both;
-}
-
-.contact__frontPage__teamImages img:nth-child(3) {
-    right: 0;
-    z-index: 1;
-    transform: rotateZ(35deg);
-    animation: imgAnimation 2s both;
-}
-
-.contact__frontPage__teamImages img:nth-child(4) {
-    z-index: 3;
-    top: 70%;
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    animation: imgAnimation 2.5s both;
-
-}
 
 /* contact__form */
 .contact__formContainer {
@@ -206,4 +159,67 @@
 .contact__form button:hover {
     background-color: var(--text-color-gold);
     transition: 0.3s ease;
+}
+
+
+@media(max-width:900px) {
+
+    .contactFrontPage__texts {
+        padding: 3vw;
+    }
+
+    .contactFrontPage__texts h1 {
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .contactFrontPage__texts h2 {
+        font-size: 12vw;
+        text-align: center;
+    }
+
+    .contactFrontPage__texts p {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .contactFrontPage__texts span {
+        width: 15vw;
+    }
+
+    .contact__formContainer {
+        height: auto;
+        flex-direction: column-reverse;
+        gap: 10vw;
+
+    }
+
+    .contact__formContainer img {
+        width: 90%;
+    }
+
+    .contact__form {
+        width: 100%;
+        padding: 3vw;
+    }
+
+    .contactForm__Div {
+        width: 100%;
+    }
+
+    .contactForm__DivLabel {
+        font-size: 4.3vw;
+    }
+
+    .contactForm__DivLabel__animation {
+        font-size: 3.5vw;
+    }
+
+    .contactForm__Div input {
+        font-size: 4.5vw;
+    }
+
+    .contactForm__DivLabel__animation2 {
+        font-size: 3.5vw;
+    }
 }

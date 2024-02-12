@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 
 const OneSectionFrontPage = ({ section, setSelect, select }) => {
   return (
-    <section className="oneSectionFrontPage__titleVideoContainer">
+    <section className="oneSectionFrontPage__Container">
       <img
         className="oneSectionFrontPage__img"
         src={section.sectionImg}
@@ -33,7 +33,7 @@ const OneSectionFrontPage = ({ section, setSelect, select }) => {
           ))}
         </article>
       </div>
-      <section className="oneSection__exampleContianer">
+      <section className="oneSection__selectContianer">
         <h2
           style={
             select === 'videos'

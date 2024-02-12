@@ -14,6 +14,7 @@ const OnseSectionPhotoAlbum = ({ section }) => {
       <div className="oneSection__photosGrid">
         {section?.photoAlbums?.map((photo, index) => (
           <div
+            className="oneSection__photosGrid__div"
             ref={ref}
             key={photo.id}
             style={{

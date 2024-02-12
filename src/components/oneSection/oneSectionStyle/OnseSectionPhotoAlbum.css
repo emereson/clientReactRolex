@@ -71,3 +71,23 @@
     right: 1em;
 
 }
+
+@media(max-width:900px) {
+    .oneSection__photosContainer {
+        padding: 3vw;
+    }
+
+    .oneSection__photosGrid {
+        display: flex !important;
+        flex-direction: column;
+        gap: 2vw;
+        width: 100%;
+    }
+
+    .oneSection__photosGrid__div {
+        height: 25vh;
+        width: 100%;
+    }
+
+
+}

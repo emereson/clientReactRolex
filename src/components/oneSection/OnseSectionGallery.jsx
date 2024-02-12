@@ -14,6 +14,7 @@ const OnseSectionGallery = ({ section }) => {
       <div className="oneSection__photosGrid">
         {section?.galleries?.map((photo, index) => (
           <div
+            className="oneSection__photosGrid__div"
             ref={ref}
             key={photo.id}
             style={{
