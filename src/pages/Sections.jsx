@@ -163,7 +163,7 @@ const Sections = () => {
         />
         <article className="sectionsLetsWork__article">
           <h3>Let's work together</h3>
-          <Link>INQUIRE HERE</Link>
+          <Link to="/contact">INQUIRE HERE</Link>
         </article>
       </section>
     </div>
