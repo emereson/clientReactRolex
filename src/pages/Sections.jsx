@@ -114,7 +114,7 @@ const Sections = () => {
           </article>
           <article className={`sections__notesVisible  `}>
             <img
-              src="/BODA03.jpg"
+              src="/BODA03.jpeg"
               alt="Each second is a gift. Do what you enjoy now."
             />
             <div>
@@ -123,7 +123,7 @@ const Sections = () => {
           </article>
           <article className={`sections__notesVisible  `}>
             <img
-              src="/BODA04.jpg"
+              src="/BODA04.jpeg"
               alt="LET US CAPTURE THE TRUE EMOTIONS OF YOUR WEDDING DAY."
             />
             <div>
