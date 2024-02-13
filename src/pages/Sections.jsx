@@ -128,7 +128,7 @@ const Sections = () => {
             />
             <div>
               <p>
-                "LET US CAPTURE THE TRUE EMOTIONS OF YOUR WEDDING
+                "LET US CAPTURE THE TRUE EMOTIONS OF YOUR SPECIAL
                 DAY."
               </p>
             </div>
