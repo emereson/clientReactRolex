@@ -24,7 +24,7 @@ const Header = () => {
   }, [location.pathname]);
   useEffect(() => {
     const handleScroll = () => {
-      if (document.getElementById('app').scrollTop > 500) {
+      if (document.getElementById('app').scrollTop > 400) {
         setheaderWhite(true);
       } else {
         setheaderWhite(false);
