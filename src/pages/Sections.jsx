@@ -43,12 +43,6 @@ const Sections = () => {
             SEE SERVICES <img src="/flecha.png" alt="flecha" />
           </p>
         </article>
-        <article className="sections__frontPage__teamImages">
-          <img src="./02-min.jpg" alt="image 1" />
-          <img src="./16-min.jpg" alt="image 2" />
-          <img src="./4.jpg" alt="image 3" />
-          <img src="./5.jpg" alt="image 4" />
-        </article>
       </section>
       <section className="sections__servicesContainer" id="home">
         <h2>SERVICES</h2>

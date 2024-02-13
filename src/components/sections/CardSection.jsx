@@ -57,6 +57,7 @@ const CardSection = ({ section, index }) => {
         controls={false}
         loop={true}
         width="100%"
+        height="100%"
       />
 
       <Link
