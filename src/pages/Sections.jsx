@@ -45,7 +45,7 @@ const Sections = () => {
         </article> */}
       </section>
       <section className="sections__servicesContainer" id="home">
-        <h2>SERVICES</h2>
+        <h2>OUR SERVICES</h2>
         <article className="sections__articleTwo">
           {allSections?.sections.map((section, index) => (
             <CardSection
