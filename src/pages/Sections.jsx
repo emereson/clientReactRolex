@@ -36,13 +36,13 @@ const Sections = () => {
           src="/1.jpeg"
           alt="creative art video home "
         />
-        <article className="sections__frontPage__texts">
+        {/* <article className="sections__frontPage__texts">
           <p>WELCOME TO</p>
           <h1>CREATIVE ART VIDEO</h1>
           <p>
             SEE SERVICES <img src="/flecha.png" alt="flecha" />
           </p>
-        </article>
+        </article> */}
       </section>
       <section className="sections__servicesContainer" id="home">
         <h2>SERVICES</h2>
