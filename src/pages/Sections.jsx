@@ -33,7 +33,7 @@ const Sections = () => {
       <section className="sections__frontPage">
         <img
           className="sections__frontPageImg"
-          src="/BODA04.jpeg"
+          src="/1.jpeg"
           alt="creative art video home "
         />
         <article className="sections__frontPage__texts">
