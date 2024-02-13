@@ -95,9 +95,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    padding-top: 3em;
-    gap: 2em;
+    padding-top: 1em;
+    gap: 1em;
 }
 
 .sections__servicesContainer h2 {
