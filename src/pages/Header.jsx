@@ -22,24 +22,21 @@ const Header = () => {
   useEffect(() => {
     setUrl(location.pathname);
   }, [location.pathname]);
+
   useEffect(() => {
     const handleScroll = () => {
-      if (document.getElementById('app').scrollTop > 400) {
+      if (window.scrollY > 350) {
         setheaderWhite(true);
       } else {
         setheaderWhite(false);
       }
     };
 
-    document
-      .getElementById('app')
-      .addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     // Limpiar el event listener cuando el componente se desmonta
     return () => {
-      document
-        .getElementById('app')
-        .removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
