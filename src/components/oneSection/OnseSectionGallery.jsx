@@ -46,46 +46,45 @@ const OnseSectionGallery = ({ section }) => {
           </div>
         ))}
 
-        {viewImg ? (
-          <div className="oneSection__viewImgContainer">
-            <i
-              className="bx bx-x oneSection__closeViesImg"
-              onClick={() => setViewImg(false)}
-            ></i>
-            <i
-              className="bx bx-chevron-left"
-              onClick={() =>
-                selectImgIndex > 0
-                  ? setSelectImgIndex(selectImgIndex - 1)
-                  : setSelectImgIndex(0)
-              }
-            ></i>
+        <div
+          className="oneSection__viewImgContainer"
+          style={{ display: viewImg ? 'flex' : 'none' }}
+        >
+          <i
+            className="bx bx-x oneSection__closeViesImg"
+            onClick={() => setViewImg(false)}
+          ></i>
+          <i
+            className="bx bx-chevron-left"
+            onClick={() =>
+              selectImgIndex > 0
+                ? setSelectImgIndex(selectImgIndex - 1)
+                : setSelectImgIndex(0)
+            }
+          ></i>
 
-            <div className="oneSection__viewImgDiv">
-              {section?.galleries?.map((photo, index) => (
-                <img
-                  key={photo.id}
-                  src={photo.linkImg}
-                  alt=""
-                  onClick={() => setViewImg(true)}
-                  style={
-                    index === selectImgIndex ? { opacity: '1' } : null
-                  }
-                />
-              ))}
-            </div>
-            <i
-              className="bx bx-chevron-right"
-              onClick={() =>
-                selectImgIndex < section?.galleries?.length - 1
-                  ? setSelectImgIndex(selectImgIndex + 1)
-                  : setSelectImgIndex(0)
-              }
-            ></i>
+          <div className="oneSection__viewImgDiv">
+            {section?.galleries?.map((photo, index) => (
+              <img
+                key={photo.id}
+                src={photo.linkImg}
+                alt=""
+                onClick={() => setViewImg(true)}
+                style={
+                  index === selectImgIndex ? { opacity: '1' } : null
+                }
+              />
+            ))}
           </div>
-        ) : (
-          ''
-        )}
+          <i
+            className="bx bx-chevron-right"
+            onClick={() =>
+              selectImgIndex < section?.galleries?.length - 1
+                ? setSelectImgIndex(selectImgIndex + 1)
+                : setSelectImgIndex(0)
+            }
+          ></i>
+        </div>
       </div>
     </div>
   );
