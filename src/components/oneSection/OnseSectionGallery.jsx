@@ -19,7 +19,7 @@ const OnseSectionGallery = ({ section }) => {
             key={photo.id}
             style={{
               ...(index % 5 === 0
-                ? { gridColumn: 'span 2', gridRow: 'span 2 ' }
+                ? { gridColumn: 'span 2', gridRow: 'auto' }
                 : {}),
               // ...(index === 0
               maxHeight: '600px',
