@@ -21,7 +21,7 @@ const OnseSectionGallery = ({ section }) => {
               ...(index % 5 === 0
                 ? { gridColumn: 'span 2', gridRow: 'auto' }
                 : {}),
-              // ...(index === 0
+
               maxHeight: '600px',
             }}
           >
@@ -32,7 +32,7 @@ const OnseSectionGallery = ({ section }) => {
                 setViewImg(true);
                 setSelectImgIndex(index);
               }}
-              loading="..."
+              loading="lazy"
               style={
                 inView
                   ? {
