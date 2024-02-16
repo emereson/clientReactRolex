@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    overflow-x: hidden;
 
 }
 
@@ -269,7 +270,7 @@
     }
 
     .sections__articleTwo {
-        padding: 0;
+        padding: 1em;
     }
 
     .sections__notesContainer {

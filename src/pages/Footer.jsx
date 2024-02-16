@@ -40,8 +40,8 @@ const Footer = () => {
       <section className="footer__sectionThree">
         <Link> GET IN TOUCH </Link>
         <p>
-          Limited availability in 2024. Booking 2025 now. Reserve your
-          date early to avoid disappointment.
+          Booking 2024 and 2025 now. Reserve your date in advance,
+          give us the opportunity to be part of that special day.
         </p>
       </section>
     </div>
