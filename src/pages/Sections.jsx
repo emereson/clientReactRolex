@@ -26,7 +26,7 @@ const Sections = () => {
         setidNote(1);
       }
     }
-  }, 3500);
+  }, 5000);
 
   return (
     <div className="sections__container">
@@ -36,13 +36,6 @@ const Sections = () => {
           src="/1.jpeg"
           alt="creative art video home "
         />
-        {/* <article className="sections__frontPage__texts">
-          <p>WELCOME TO</p>
-          <h1>CREATIVE ART VIDEO</h1>
-          <p>
-            SEE SERVICES <img src="/flecha.png" alt="flecha" />
-          </p>
-        </article> */}
       </section>
       <section className="sections__servicesContainer" id="home">
         <h2>OUR SERVICES</h2>
