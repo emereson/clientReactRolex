@@ -48,17 +48,20 @@ const CardSection = ({ section, index }) => {
         alt={section.title}
         style={viewTitle ? { opacity: '0' } : { opacity: '1' }}
       />
-
-      <ReactPlayer
-        className="cardSection__video"
-        playing={viewTitle}
-        volume={0}
-        url={section.linkVideo}
-        controls={false}
-        loop={true}
-        width="100%"
-        height="100%"
-      />
+      {section.linkVideo ? (
+        <ReactPlayer
+          className="cardSection__video"
+          playing={viewTitle}
+          volume={0}
+          url={section.linkVideo}
+          controls={false}
+          loop={true}
+          width="100%"
+          height="100%"
+        />
+      ) : (
+        ''
+      )}
 
       <Link
         to={`/section/${section.id}`}

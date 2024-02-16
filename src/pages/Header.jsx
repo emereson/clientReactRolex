@@ -34,7 +34,6 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Limpiar el event listener cuando el componente se desmonta
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

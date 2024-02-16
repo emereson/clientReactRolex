@@ -36,6 +36,15 @@ const Footer = () => {
       </section>
       <section className="footer__sectionTwo">
         <img src="/logo2.png" alt="" />
+        <a
+          href="https://idotcode.com"
+          target="_blank"
+          aria-label="Visitar pagina del desarrollador Creative Art"
+        >
+          con
+          <i className="bx bxs-heart"></i>
+          by IdotCode
+        </a>
       </section>
       <section className="footer__sectionThree">
         <Link to="contact"> GET IN TOUCH </Link>

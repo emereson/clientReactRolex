@@ -11,18 +11,15 @@ const OnseSectionPhotoAlbum = ({ section }) => {
 
   return (
     <div className="oneSection__photosContainer">
-      <div className="oneSection__photosGrid">
+      <div className="oneSection__photosGrid oneSection__photosGrid2">
         {section?.photoAlbums?.map((photo, index) => (
           <div
             className="oneSection__photosGrid__div"
             ref={ref}
             key={photo.id}
             style={{
-              ...(index % 5 === 0
-                ? { gridColumn: 'span 2', gridRow: 'span 2 ' }
-                : {}),
-              // ...(index === 0
-              maxHeight: '600px',
+              gridColumn: 'span 2',
+              gridRow: 'span 2',
             }}
           >
             <img

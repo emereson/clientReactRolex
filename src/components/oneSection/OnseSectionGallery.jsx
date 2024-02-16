@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './oneSectionStyle/OnseSectionPhotoAlbum.css';
 import { useInView } from 'react-intersection-observer';
 
@@ -8,6 +8,52 @@ const OnseSectionGallery = ({ section }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  const [imagenes, setImagenes] = useState([]);
+  const [playShow, setPlayShow] = useState(false);
+
+  useEffect(() => {
+    const obtenerTamanos = async () => {
+      const tamanos = await Promise.all(
+        section?.galleries?.map(async (photo) => {
+          const tamano = await obtenerTamanoIntrinseco(photo.linkImg);
+          return { ...tamano, id: photo.id };
+        })
+      );
+      setImagenes(tamanos);
+    };
+
+    obtenerTamanos();
+  }, [section]);
+
+  const obtenerTamanoIntrinseco = (url) => {
+    return new Promise((resolve, reject) => {
+      const imagen = new Image();
+      imagen.onload = () => {
+        resolve({
+          width: imagen.naturalWidth,
+          height: imagen.naturalHeight,
+        });
+      };
+      imagen.onerror = (error) => {
+        reject(error);
+      };
+      imagen.src = url;
+    });
+  };
+
+  const clickPlayShow = () => {
+    if (playShow) {
+      setTimeout(() => {
+        selectImgIndex < section?.galleries?.length - 1
+          ? setSelectImgIndex(selectImgIndex + 1)
+          : setSelectImgIndex(0); // Si llega al final, volver al inicio
+      }, 3000); // Intervalo de tiempo entre cada cambio de imagen
+    }
+  };
+
+  useEffect(() => {
+    clickPlayShow();
+  }, [selectImgIndex, playShow]);
 
   return (
     <div className="oneSection__photosContainer">
@@ -18,10 +64,9 @@ const OnseSectionGallery = ({ section }) => {
             ref={ref}
             key={photo.id}
             style={{
-              ...(index % 5 === 0
+              ...(imagenes[index]?.width > imagenes[index]?.height
                 ? { gridColumn: 'span 2', gridRow: 'auto' }
                 : {}),
-
               maxHeight: '600px',
             }}
           >
@@ -52,14 +97,17 @@ const OnseSectionGallery = ({ section }) => {
         >
           <i
             className="bx bx-x oneSection__closeViesImg"
-            onClick={() => setViewImg(false)}
+            onClick={() => {
+              setViewImg(false);
+              setPlayShow(false);
+            }}
           ></i>
           <i
             className="bx bx-chevron-left"
             onClick={() =>
-              selectImgIndex > 0
-                ? setSelectImgIndex(selectImgIndex - 1)
-                : setSelectImgIndex(0)
+              setSelectImgIndex((prevIndex) =>
+                prevIndex > 0 ? prevIndex - 1 : 0
+              )
             }
           ></i>
 
@@ -76,12 +124,30 @@ const OnseSectionGallery = ({ section }) => {
               />
             ))}
           </div>
+
+          <button
+            className="oneSection__sliderShow"
+            onClick={() => {
+              setPlayShow(!playShow);
+              clickPlayShow();
+            }}
+          >
+            {playShow ? (
+              <i className="bx bx-stop"></i>
+            ) : (
+              <i className="bx bx-play"></i>
+            )}
+            <p>Slideshow</p>
+          </button>
+
           <i
             className="bx bx-chevron-right"
             onClick={() =>
-              selectImgIndex < section?.galleries?.length - 1
-                ? setSelectImgIndex(selectImgIndex + 1)
-                : setSelectImgIndex(0)
+              setSelectImgIndex((prevIndex) =>
+                prevIndex < section?.galleries?.length - 1
+                  ? prevIndex + 1
+                  : 0
+              )
             }
           ></i>
         </div>

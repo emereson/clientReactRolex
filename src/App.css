@@ -1,4 +1,5 @@
 .app_container {
+  /* position: relative; */
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -32,5 +33,54 @@
   100% {
     scale: 1;
     opacity: 1;
+  }
+}
+
+.top__container {
+  position: fixed;
+  bottom: 2vw;
+  right: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  cursor: pointer;
+  z-index: 20;
+  background-color: var(--body-light);
+  border-radius: 0.5em;
+}
+
+.top__container img {
+  width: 4vw;
+  transform: rotateZ(90deg);
+}
+
+.top__container p {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+@media(max-width:800px) {
+  .top__container img {
+    width: 15vw;
+    transform: rotateZ(90deg);
+  }
+
+  .top__container p {
+    font-size: 4vw;
+    font-weight: 600;
+  }
+}
+
+@media(max-height:500px) {
+  .top__container img {
+    width: 6vw;
+    transform: rotateZ(90deg);
+  }
+
+  .top__container p {
+    font-size: 1.5vw;
+    font-weight: 600;
   }
 }

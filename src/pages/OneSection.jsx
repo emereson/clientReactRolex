@@ -21,8 +21,6 @@ const OneSection = () => {
     }, 100);
   }, [id]);
 
-  // window.location.reload();
-
   useEffect(() => {
     const url = `${import.meta.env.VITE_URL_API}/section/${id}`;
 
@@ -35,15 +33,12 @@ const OneSection = () => {
   return (
     plaVideo && (
       <div className="oneSection__container">
-        {section ? (
-          <OneSectionFrontPage
-            section={section}
-            setSelect={setSelect}
-            select={select}
-          />
-        ) : (
-          ''
-        )}
+        <OneSectionFrontPage
+          section={section}
+          setSelect={setSelect}
+          select={select}
+          id={id}
+        />
 
         <section className="oneSection__videosPhotosContainer">
           {select === 'videos' ? (
