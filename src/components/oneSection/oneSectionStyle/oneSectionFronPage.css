@@ -29,7 +29,6 @@
     margin-top: -8vw;
     padding: 1em;
     z-index: 5;
-    gap: 2vw;
 }
 
 .oneSectionFrontPage__videosContainer {
@@ -52,23 +51,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 1em;
     color: var(--text-color-white);
     animation: textAnimation 1.5s forwards;
 }
 
 .oneSectionFrontPage__titleContainer h1 {
-    width: 100%;
     color: var(--text-color-gold);
     font-size: 1.8em;
-    font-family: "Playfair", serif;
     z-index: 2;
-    text-align: center;
 }
 
 .oneSectionFrontPage__titleContainer div {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -78,8 +73,8 @@
     font-family: "Playfair", serif;
     width: 100%;
     color: var(--text-color-white);
-    font-size: 1.3em;
-    text-align: start;
+    font-size: 1.6em;
+    text-align: center;
     z-index: 2;
 
 }
