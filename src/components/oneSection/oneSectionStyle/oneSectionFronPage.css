@@ -24,7 +24,7 @@
     width: 100%;
     height: 30vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: -8vw;
     padding: 1em;
@@ -60,6 +60,7 @@
 .oneSectionFrontPage__titleContainer h1 {
     color: var(--text-color-gold);
     font-size: 1.8em;
+    font-family: "Playfair", serif;
     z-index: 2;
 }
 
@@ -70,11 +71,13 @@
 }
 
 .oneSectionFrontPage__titleContainer p {
+    font-family: "Playfair", serif;
     width: 100%;
     color: var(--text-color-white);
     font-size: 1.3em;
     text-align: center;
     z-index: 2;
+
 }
 
 .oneSection__selectContianer {
