@@ -38,7 +38,7 @@ const Footer = () => {
         <img src="/logo2.png" alt="" />
       </section>
       <section className="footer__sectionThree">
-        <Link> GET IN TOUCH </Link>
+        <Link to="contact"> GET IN TOUCH </Link>
         <p>
           Booking 2024 and 2025 now. Reserve your date in advance,
           give us the opportunity to be part of that special day.
