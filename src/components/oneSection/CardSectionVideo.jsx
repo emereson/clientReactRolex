@@ -42,7 +42,10 @@ const CardSectionVideo = ({ video, index }) => {
         className="cardSectionVideo__imgContainer"
         onClick={() => setOpenVideo(!openVideo)}
       >
-        <img src={video.linkImg} alt="" />
+        <img
+          src={`${import.meta.env.VITE_URL_Img}${video.linkImg}`}
+          alt=""
+        />
         <div className="cardSectionVideo__imgPlayVideo">
           <p>PLAY FILM</p>
           <i className="bx bx-play"></i>

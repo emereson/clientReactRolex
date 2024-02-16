@@ -26,7 +26,7 @@ const Sections = () => {
         setidNote(1);
       }
     }
-  }, 8000);
+  }, 7000);
 
   return (
     <div className="sections__container">

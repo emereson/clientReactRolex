@@ -23,7 +23,7 @@ const OnseSectionPhotoAlbum = ({ section }) => {
             }}
           >
             <img
-              src={photo.linkImg}
+              src={`${import.meta.env.VITE_URL_Img}${photo?.linkImg}`}
               alt=""
               onClick={() => {
                 setViewImg(true);
@@ -62,7 +62,9 @@ const OnseSectionPhotoAlbum = ({ section }) => {
               {section?.photoAlbums?.map((photo, index) => (
                 <img
                   key={photo.id}
-                  src={photo.linkImg}
+                  src={`${import.meta.env.VITE_URL_Img}${
+                    photo?.linkImg
+                  }`}
                   alt=""
                   onClick={() => setViewImg(true)}
                   style={
