@@ -28,7 +28,6 @@ const CardSection = ({ section, index }) => {
       }
     }
   }, [viewTitle]);
-  console.log(section);
 
   return (
     <div
