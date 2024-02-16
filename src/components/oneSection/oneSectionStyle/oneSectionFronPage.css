@@ -129,6 +129,7 @@
 
     .oneSectionFrontPage__titleContainer {
         width: 100%;
+        justify-content: start;
     }
 
     .oneSectionFrontPage__titleContainer h1 {
