@@ -12,7 +12,7 @@ const OneSectionFrontPage = ({ section, setSelect, select, id }) => {
     <section className="oneSectionFrontPage__Container">
       <img
         className="oneSectionFrontPage__img"
-        src={`${import.meta.env.VITE_URL_Img}${section?.linkImg}`}
+        src={`${import.meta.env.VITE_URL_IMG}${section?.linkImg}`}
         alt=""
       />
       <div className="oneSectionFrontPage__articlesContainer">

@@ -44,7 +44,7 @@ const CardSection = ({ section, index }) => {
       }
     >
       <img
-        src={`${import.meta.env.VITE_URL_Img}${section?.linkImg}`}
+        src={`${import.meta.env.VITE_URL_IMG}${section?.linkImg}`}
         alt={section.title}
         style={viewTitle ? { opacity: '0' } : { opacity: '1' }}
       />
