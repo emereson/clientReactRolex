@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setViewLoading(true);
-    }, 1500);
+    }, 1000);
   }, []);
 
   return (
