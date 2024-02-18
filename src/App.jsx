@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,6 +14,23 @@ const OneSection = lazy(() => import('./pages/OneSection'));
 const Contact = lazy(() => import('./pages/Contact'));
 
 function App() {
+  const [viewTop, setViewTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setViewTop(true);
+      } else {
+        setViewTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <>
       <ToastContainer />
@@ -25,13 +42,17 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>
-      <div
-        className="top__container"
-        onClick={() => window.scrollTo(0, 0)}
-      >
-        <img src="/arrow-left.svg" alt="" />
-        <p>Top</p>
-      </div>
+      {viewTop ? (
+        <div
+          className="top__container"
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          <img src="/arrow-left.svg" alt="" />
+          <p>Top</p>
+        </div>
+      ) : (
+        ''
+      )}
       <Footer />
     </>
   );
