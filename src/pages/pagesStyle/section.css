@@ -131,8 +131,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: 1s ease;
     padding: 3vw;
+    visibility: visible;
+    transition: 1s ease;
 
 }
 
