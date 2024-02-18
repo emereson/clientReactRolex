@@ -45,6 +45,7 @@ const Footer = () => {
           href="https://idotcode.com"
           target="_blank"
           aria-label="Visitar pagina del desarrollador Creative Art"
+          role="link"
         >
           con
           <i className="bx bxs-heart"></i>
