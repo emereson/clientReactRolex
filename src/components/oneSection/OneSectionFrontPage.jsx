@@ -8,7 +8,7 @@ const OneSectionFrontPage = ({ section, setSelect, select, id }) => {
   useEffect(() => {
     setVideoKey((prevKey) => prevKey + 1);
   }, [id, section]);
-  console.log(section);
+
   return (
     <section className="oneSectionFrontPage__Container">
       <img
