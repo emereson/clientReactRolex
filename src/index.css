@@ -5,6 +5,7 @@
   src: url('../fonts/Hiragino.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
