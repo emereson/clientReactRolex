@@ -1,0 +1,38 @@
+.loadingPage__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--body-white);
+
+  gap: 0.5vw;
+}
+
+.loadingPage__exit {
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 1s ease, z-index 1.5s;
+
+}
+
+
+.loadingPage__container img {
+  width: 30% !important;
+}
+
+
+
+@media (max-width: 900px) {
+
+
+  .loadingPage__container img {
+    width: 50% !important;
+  }
+
+}

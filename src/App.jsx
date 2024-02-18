@@ -5,16 +5,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from './pages/Header';
 import Footer from './pages/Footer';
 import './App.css';
-
-// Lazy load the Sections component
-const Sections = lazy(() => import('./pages/Sections'));
-// Lazy load the OneSection component
-const OneSection = lazy(() => import('./pages/OneSection'));
-// Lazy load the Contact component
-const Contact = lazy(() => import('./pages/Contact'));
+import Sections from './pages/Sections';
+import OneSection from './pages/OneSection';
+import Contact from './pages/Contact';
+import LoadingPage from './pages/LoadingPage';
 
 function App() {
   const [viewTop, setViewTop] = useState(false);
+  const [viewloading, setViewLoading] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,17 +29,26 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setViewLoading(true);
+    }, 1500);
+  }, []);
+
   return (
     <>
       <ToastContainer />
       <Header />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Sections />} />
-          <Route path="/section/:id" element={<OneSection />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Suspense>
+
+      <LoadingPage viewloading={viewloading} />
+
+      <Routes>
+        <Route path="/" element={<Sections />} />
+        <Route path="/section/:id" element={<OneSection />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
       {viewTop ? (
         <div
           className="top__container"
