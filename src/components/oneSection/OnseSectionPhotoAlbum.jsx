@@ -44,7 +44,7 @@ const OnseSectionPhotoAlbum = ({ section }) => {
                 setViewImg(true);
                 setSelectImgIndex(index);
               }}
-              loading="..."
+              loading="lazy"
               style={
                 inView
                   ? {
