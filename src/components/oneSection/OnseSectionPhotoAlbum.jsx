@@ -62,7 +62,10 @@ const OnseSectionPhotoAlbum = ({ section }) => {
           <div className="oneSection__viewImgContainer">
             <i
               className="bx bx-x oneSection__closeViesImg"
-              onClick={() => setViewImg(false)}
+              onClick={() => {
+                setViewImg(false);
+                setPlayShow(false);
+              }}
             ></i>
 
             <i
