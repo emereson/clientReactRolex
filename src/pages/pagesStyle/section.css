@@ -8,18 +8,6 @@
 
 }
 
-.sections__frontPage {
-    position: relative;
-    width: 100%;
-    height: 35vh;
-    max-height: 35vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-
 
 .sections__frontPageImg {
     width: 100%;

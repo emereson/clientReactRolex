@@ -30,14 +30,13 @@ const Sections = () => {
 
   return (
     <div className="sections__container">
-      <section className="sections__frontPage">
-        <img
-          lazy="load"
-          className="sections__frontPageImg"
-          src="/1.webp"
-          alt="creative art video home "
-        />
-      </section>
+      <img
+        lazy="load"
+        className="sections__frontPageImg"
+        src="/1.webp"
+        alt="creative art video home "
+      />
+
       <section className="sections__servicesContainer" id="home">
         <h2>OUR SERVICES</h2>
         <article className="sections__articleTwo">
