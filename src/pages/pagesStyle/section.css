@@ -125,11 +125,17 @@
 
 }
 
+.sectionsNotes__articlesContainer {
+    position: relative;
+    min-width: 600%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
 
 .sections__notesVisible {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     display: flex;

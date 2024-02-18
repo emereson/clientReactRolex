@@ -51,107 +51,87 @@ const Sections = () => {
         </article>
       </section>
       <section className="sections__notesContainer">
-        <article
-          className={`sections__notesVisible  `}
+        <div
+          className="sectionsNotes__articlesContainer"
           style={{
-            opacity: idNote === 1 ? '1' : '0',
+            transform: `translate3d(-${
+              (100 / 6) * (idNote - 1)
+            }%,0px,0px)`,
           }}
         >
-          <img src="/boda.webp" alt="boda notes" />
-          <div>
-            <p>
-              "Your wedding isn't just one day, for us, your wedding
-              film will be forever."
-            </p>
-          </div>
-        </article>
-        <article
-          className={`sections__notesVisible  `}
-          style={{
-            opacity: idNote === 2 ? '1' : '0',
-          }}
-        >
-          <img src="/1500.webp" alt="event notes" lazy="load" />
-          <div>
-            <p>
-              "Enjoy every second of your EVENT without being stressed
-              about missing any of its important moments. We capture
-              ALL OF THEM."
-            </p>
-          </div>
-        </article>
-        <article
-          className={`sections__notesVisible `}
-          style={{
-            opacity: idNote === 3 ? '1' : '0',
-          }}
-        >
-          <img
-            lazy="load"
-            src="/1503.webp"
-            alt="An impactful creative film made up of the best and
+          <article className={`sections__notesVisible  `}>
+            <img src="/boda.webp" alt="boda notes" />
+            <div>
+              <p>
+                "Your wedding isn't just one day, for us, your wedding
+                film will be forever."
+              </p>
+            </div>
+          </article>
+          <article className={`sections__notesVisible  `}>
+            <img src="/1500.webp" alt="event notes" lazy="load" />
+            <div>
+              <p>
+                "Enjoy every second of your EVENT without being
+                stressed about missing any of its important moments.
+                We capture ALL OF THEM."
+              </p>
+            </div>
+          </article>
+          <article className={`sections__notesVisible `}>
+            <img
+              lazy="load"
+              src="/1503.webp"
+              alt="An impactful creative film made up of the best and
               most memorable moments of your day."
-          />
-          <div>
-            <p>
-              "An impactful creative film made up of the best and
-              most memorable moments of your day."
-            </p>
-          </div>
-        </article>
-        <article
-          className={`sections__notesVisible  `}
-          style={{
-            opacity: idNote === 4 ? '1' : '0',
-          }}
-        >
-          <img
-            src="/15Ashley.webp"
-            alt="The age of fifteen is the age that all young girls look
+            />
+            <div>
+              <p>
+                "An impactful creative film made up of the best and
+                most memorable moments of your day."
+              </p>
+            </div>
+          </article>
+          <article className={`sections__notesVisible  `}>
+            <img
+              src="/15Ashley.webp"
+              alt="The age of fifteen is the age that all young girls look
               forward to with joy, with hopes, and many dreams. Never
               stop dreaming."
-            lazy="load"
-          />
-          <div>
-            <p>
-              "The age of fifteen is the age that all young girls look
-              forward to with joy, with hopes, and many dreams. Never
-              stop dreaming."
-            </p>
-          </div>
-        </article>
-        <article
-          className={`sections__notesVisible  `}
-          style={{
-            opacity: idNote === 5 ? '1' : '0',
-          }}
-        >
-          <img
-            src="/BODA03.webp"
-            alt="Each second is a gift. Do what you enjoy now."
-            lazy="load"
-          />
-          <div>
-            <p>"Each second is a gift. Do what you enjoy now."</p>
-          </div>
-        </article>
-        <article
-          className={`sections__notesVisible  `}
-          style={{
-            opacity: idNote === 6 ? '1' : '0',
-          }}
-        >
-          <img
-            src="/BODA04.webp"
-            alt="LET US CAPTURE THE TRUE EMOTIONS OF YOUR WEDDING DAY."
-            lazy="load"
-          />
-          <div>
-            <p>
-              "LET US CAPTURE THE TRUE EMOTIONS OF YOUR SPECIAL DAY."
-            </p>
-          </div>
-        </article>
+              lazy="load"
+            />
+            <div>
+              <p>
+                "The age of fifteen is the age that all young girls
+                look forward to with joy, with hopes, and many dreams.
+                Never stop dreaming."
+              </p>
+            </div>
+          </article>
+          <article className={`sections__notesVisible  `}>
+            <img
+              src="/BODA03.webp"
+              alt="Each second is a gift. Do what you enjoy now."
+              lazy="load"
+            />
+            <div>
+              <p>"Each second is a gift. Do what you enjoy now."</p>
+            </div>
+          </article>
+          <article className={`sections__notesVisible  `}>
+            <img
+              src="/BODA04.webp"
+              alt="LET US CAPTURE THE TRUE EMOTIONS OF YOUR WEDDING DAY."
+              lazy="load"
+            />
+            <div>
+              <p>
+                "LET US CAPTURE THE TRUE EMOTIONS OF YOUR SPECIAL
+                DAY."
+              </p>
+            </div>
+          </article>
+        </div>
 
         <div className="sectionsNotes__arrowsContainer">
           <img
