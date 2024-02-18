@@ -75,7 +75,7 @@
   font-weight: 600;
 }
 
-@media(max-width:800px) {
+@media(max-width:850px) {
   .top__container img {
     width: 15vw;
     transform: rotateZ(90deg);
