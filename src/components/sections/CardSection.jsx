@@ -47,6 +47,7 @@ const CardSection = ({ section, index }) => {
         src={`${import.meta.env.VITE_URL_IMG}${section?.sectionImg}`}
         alt={section.title}
         style={viewTitle ? { opacity: '0' } : { opacity: '1' }}
+        lazy="load"
       />
       {section.linkVideo ? (
         <ReactPlayer
