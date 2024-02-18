@@ -34,7 +34,7 @@ const Sections = () => {
         <img
           lazy="load"
           className="sections__frontPageImg"
-          src="/1.jpeg"
+          src="/1.webp"
           alt="creative art video home "
         />
       </section>
@@ -60,7 +60,7 @@ const Sections = () => {
           }}
         >
           <article className={`sections__notesVisible  `}>
-            <img src="/boda.jpg" alt="boda notes" />
+            <img src="/boda.webp" alt="boda notes" />
             <div>
               <p>
                 "Your wedding isn't just one day, for us, your wedding
@@ -69,7 +69,7 @@ const Sections = () => {
             </div>
           </article>
           <article className={`sections__notesVisible  `}>
-            <img src="/1500.jpg" alt="event notes" lazy="load" />
+            <img src="/1500.webp" alt="event notes" lazy="load" />
             <div>
               <p>
                 "Enjoy every second of your EVENT without being
@@ -81,7 +81,7 @@ const Sections = () => {
           <article className={`sections__notesVisible `}>
             <img
               lazy="load"
-              src="/1503.jpg"
+              src="/1503.webp"
               alt="An impactful creative film made up of the best and
               most memorable moments of your day."
             />
@@ -94,7 +94,7 @@ const Sections = () => {
           </article>
           <article className={`sections__notesVisible  `}>
             <img
-              src="/15Ashley.jpg"
+              src="/15Ashley.webp"
               alt="The age of fifteen is the age that all young girls look
               forward to with joy, with hopes, and many dreams. Never
               stop dreaming."
@@ -110,7 +110,7 @@ const Sections = () => {
           </article>
           <article className={`sections__notesVisible  `}>
             <img
-              src="/BODA03.jpeg"
+              src="/BODA03.webp"
               alt="Each second is a gift. Do what you enjoy now."
               lazy="load"
             />
@@ -120,7 +120,7 @@ const Sections = () => {
           </article>
           <article className={`sections__notesVisible  `}>
             <img
-              src="/BODA04.jpeg"
+              src="/BODA04.webp"
               alt="LET US CAPTURE THE TRUE EMOTIONS OF YOUR WEDDING DAY."
               lazy="load"
             />
@@ -158,7 +158,7 @@ const Sections = () => {
 
       <section className="sections__letsWorkContainer">
         <img
-          src="./home6.jpeg"
+          src="./home6.webp"
           alt="Creative art video  Let's work together"
           lazy="load"
         />

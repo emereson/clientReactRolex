@@ -46,7 +46,7 @@ const Contact = () => {
     <div className="contact__container">
       <section className="contact__frontPage">
         <span className="film-effect"></span>
-        <img src="/15.jpg" alt="contact creative art video" />
+        <img src="/15.webp" alt="contact creative art video" />
         <article className="contactFrontPage__texts">
           <h1>Are you ready to reserve your date?</h1>
           <h2>Give us all the Details!</h2>
@@ -65,7 +65,7 @@ const Contact = () => {
         </article> */}
       </section>
       <section className="contact__formContainer">
-        <img src="./16-min.jpg" alt="image 2" />
+        <img src="./16-min.webp" alt="image 2" />
         <form
           onSubmit={sendEmail}
           ref={formRef}
