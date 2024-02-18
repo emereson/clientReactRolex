@@ -44,7 +44,7 @@ const Footer = () => {
         <a
           href="https://idotcode.com"
           target="_blank"
-          aria-label="Visitar pagina del desarrollador Creative Art"
+          aria-label="Visitar a  desarrollador idotcode"
           role="link"
         >
           con
