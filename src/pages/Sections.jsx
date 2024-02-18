@@ -3,6 +3,8 @@ import './pagesStyle/section.css';
 import axios from 'axios';
 import CardSection from '../components/sections/CardSection';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'; // Estilos opcionales de efecto de desenfoque
 
 const Sections = () => {
   const [allSections, setallSections] = useState();
@@ -31,11 +33,13 @@ const Sections = () => {
   return (
     <div className="sections__container">
       <section className="sections__frontPage">
-        <img
-          lazy="load"
-          className="sections__frontPageImg"
+        <LazyLoadImage
+          effect="blur"
           src="/1.webp"
-          alt="creative art video home "
+          alt="creative art video home"
+          className="sections__frontPageImg"
+          width="100%"
+          height="100%"
         />
       </section>
       <section className="sections__servicesContainer" id="home">
