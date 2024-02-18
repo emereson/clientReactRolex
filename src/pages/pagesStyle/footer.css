@@ -90,7 +90,7 @@
     text-align: center;
 }
 
-@media(max-width:900px) {
+@media(max-width:800px) {
     .footer__container {
         height: auto;
         flex-direction: column;

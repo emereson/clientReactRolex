@@ -105,7 +105,7 @@
     font-size: 2.5em;
 }
 
-@media(max-width:900px) {
+@media(max-width:800px) {
     .cardSectionVideo__container {
         height: 35vh;
     }

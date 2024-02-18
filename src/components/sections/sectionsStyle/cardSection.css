@@ -61,7 +61,7 @@
     height: 2.5em;
 }
 
-@media(max-width:900px) {
+@media(max-width:800px) {
     .cardSection__container {
         width: 100%;
     }
