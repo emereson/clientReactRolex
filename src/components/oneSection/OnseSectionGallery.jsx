@@ -15,7 +15,9 @@ const OnseSectionGallery = ({ section }) => {
     const obtenerTamanos = async () => {
       const tamanos = await Promise.all(
         section?.galleries?.map(async (photo) => {
-          const tamano = await obtenerTamanoIntrinseco(photo.linkImg);
+          const tamano = await obtenerTamanoIntrinseco(
+            `${import.meta.env.VITE_URL_IMG}${photo.linkImg}`
+          );
           return { ...tamano, id: photo.id };
         })
       );

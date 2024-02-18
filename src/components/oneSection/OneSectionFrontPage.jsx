@@ -8,11 +8,12 @@ const OneSectionFrontPage = ({ section, setSelect, select, id }) => {
   useEffect(() => {
     setVideoKey((prevKey) => prevKey + 1);
   }, [id, section]);
+  console.log(section);
   return (
     <section className="oneSectionFrontPage__Container">
       <img
         className="oneSectionFrontPage__img"
-        src={`${import.meta.env.VITE_URL_IMG}${section?.linkImg}`}
+        src={`${import.meta.env.VITE_URL_IMG}${section?.sectionImg}`}
         alt=""
       />
       <div className="oneSectionFrontPage__articlesContainer">
