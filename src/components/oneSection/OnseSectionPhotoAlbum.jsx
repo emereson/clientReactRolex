@@ -74,7 +74,7 @@ const OnseSectionPhotoAlbum = ({ section }) => {
                 setSelectImgIndex((prevIndex) =>
                   prevIndex > 0 ? prevIndex - 1 : 0
                 );
-                setPlayShow(!playShow);
+                setPlayShow(false);
               }}
             ></i>
 
