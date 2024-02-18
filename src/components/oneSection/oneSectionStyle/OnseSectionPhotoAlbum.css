@@ -89,7 +89,7 @@
 
 .oneSection__sliderShow {
     position: absolute;
-    bottom: 1.5vw;
+    bottom: 1vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,7 +172,7 @@
 
     .oneSection__sliderShow i {
 
-        font-size: 3.5vw;
+        font-size: 3vw;
 
     }
 

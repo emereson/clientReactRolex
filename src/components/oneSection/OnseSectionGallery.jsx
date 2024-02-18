@@ -106,11 +106,12 @@ const OnseSectionGallery = ({ section }) => {
           ></i>
           <i
             className="bx bx-chevron-left"
-            onClick={() =>
+            onClick={() => {
               setSelectImgIndex((prevIndex) =>
                 prevIndex > 0 ? prevIndex - 1 : 0
-              )
-            }
+              );
+              setPlayShow(!playShow);
+            }}
           ></i>
 
           <div className="oneSection__viewImgDiv">
@@ -146,13 +147,14 @@ const OnseSectionGallery = ({ section }) => {
 
           <i
             className="bx bx-chevron-right"
-            onClick={() =>
+            onClick={() => {
               setSelectImgIndex((prevIndex) =>
                 prevIndex < section?.galleries?.length - 1
                   ? prevIndex + 1
                   : 0
-              )
-            }
+              );
+              setPlayShow(!playShow);
+            }}
           ></i>
         </div>
       </div>

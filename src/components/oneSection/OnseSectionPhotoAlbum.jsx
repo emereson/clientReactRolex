@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './oneSectionStyle/OnseSectionPhotoAlbum.css';
 import { useInView } from 'react-intersection-observer';
 
@@ -8,6 +8,21 @@ const OnseSectionPhotoAlbum = ({ section }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  const [playShow, setPlayShow] = useState(false);
+
+  const clickPlayShow = () => {
+    if (playShow) {
+      setTimeout(() => {
+        selectImgIndex < section?.galleries?.length - 1
+          ? setSelectImgIndex(selectImgIndex + 1)
+          : setSelectImgIndex(0); // Si llega al final, volver al inicio
+      }, 3000); // Intervalo de tiempo entre cada cambio de imagen
+    }
+  };
+
+  useEffect(() => {
+    clickPlayShow();
+  }, [selectImgIndex, playShow]);
 
   return (
     <div className="oneSection__photosContainer">
@@ -49,13 +64,15 @@ const OnseSectionPhotoAlbum = ({ section }) => {
               className="bx bx-x oneSection__closeViesImg"
               onClick={() => setViewImg(false)}
             ></i>
+
             <i
               className="bx bx-chevron-left"
-              onClick={() =>
-                selectImgIndex > 0
-                  ? setSelectImgIndex(selectImgIndex - 1)
-                  : setSelectImgIndex(0)
-              }
+              onClick={() => {
+                setSelectImgIndex((prevIndex) =>
+                  prevIndex > 0 ? prevIndex - 1 : 0
+                );
+                setPlayShow(!playShow);
+              }}
             ></i>
 
             <div className="oneSection__viewImgDiv">
@@ -73,15 +90,30 @@ const OnseSectionPhotoAlbum = ({ section }) => {
                 />
               ))}
             </div>
+            <button
+              className="oneSection__sliderShow"
+              onClick={() => {
+                setPlayShow(!playShow);
+                clickPlayShow();
+              }}
+            >
+              {playShow ? (
+                <i className="bx bx-stop"></i>
+              ) : (
+                <i className="bx bx-play"></i>
+              )}
+              <p>Slideshow</p>
+            </button>
             <i
               className="bx bx-chevron-right"
-              onClick={() =>
-                selectImgIndex < section?.photoAlbums?.length - 1
-                  ? setSelectImgIndex(selectImgIndex + 1)
-                  : setSelectImgIndex(
-                      section?.photoAlbums?.length - 1
-                    )
-              }
+              onClick={() => {
+                setSelectImgIndex((prevIndex) =>
+                  prevIndex < section?.photoAlbums?.length - 1
+                    ? prevIndex + 1
+                    : 0
+                );
+                setPlayShow(!playShow);
+              }}
             ></i>
           </div>
         ) : (
