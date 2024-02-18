@@ -153,7 +153,7 @@ const OnseSectionGallery = ({ section }) => {
                   ? prevIndex + 1
                   : 0
               );
-              setPlayShow(!playShow);
+              setPlayShow(false);
             }}
           ></i>
         </div>

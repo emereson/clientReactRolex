@@ -115,7 +115,7 @@ const OnseSectionPhotoAlbum = ({ section }) => {
                     ? prevIndex + 1
                     : 0
                 );
-                setPlayShow(!playShow);
+                setPlayShow(false);
               }}
             ></i>
           </div>
