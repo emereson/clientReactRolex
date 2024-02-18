@@ -32,6 +32,7 @@ const Sections = () => {
     <div className="sections__container">
       <section className="sections__frontPage">
         <img
+          lazy="load"
           className="sections__frontPageImg"
           src="/1.jpeg"
           alt="creative art video home "
@@ -68,7 +69,7 @@ const Sections = () => {
             </div>
           </article>
           <article className={`sections__notesVisible  `}>
-            <img src="/1500.jpg" alt="event notes" />
+            <img src="/1500.jpg" alt="event notes" lazy="load" />
             <div>
               <p>
                 "Enjoy every second of your EVENT without being
@@ -79,6 +80,7 @@ const Sections = () => {
           </article>
           <article className={`sections__notesVisible `}>
             <img
+              lazy="load"
               src="/1503.jpg"
               alt="An impactful creative film made up of the best and
               most memorable moments of your day."
@@ -96,6 +98,7 @@ const Sections = () => {
               alt="The age of fifteen is the age that all young girls look
               forward to with joy, with hopes, and many dreams. Never
               stop dreaming."
+              lazy="load"
             />
             <div>
               <p>
@@ -109,6 +112,7 @@ const Sections = () => {
             <img
               src="/BODA03.jpeg"
               alt="Each second is a gift. Do what you enjoy now."
+              lazy="load"
             />
             <div>
               <p>"Each second is a gift. Do what you enjoy now."</p>
@@ -118,6 +122,7 @@ const Sections = () => {
             <img
               src="/BODA04.jpeg"
               alt="LET US CAPTURE THE TRUE EMOTIONS OF YOUR WEDDING DAY."
+              lazy="load"
             />
             <div>
               <p>
@@ -136,6 +141,7 @@ const Sections = () => {
               setidNote(idNote > 1 ? idNote - 1 : 6);
               setAutoSlide(false);
             }}
+            lazy="load"
           />
           <span>{idNote}/6</span>
           <img
@@ -145,6 +151,7 @@ const Sections = () => {
               setidNote(idNote > 5 ? 1 : idNote + 1),
                 setAutoSlide(false);
             }}
+            lazy="load"
           />
         </div>
       </section>
@@ -153,6 +160,7 @@ const Sections = () => {
         <img
           src="./home6.jpeg"
           alt="Creative art video  Let's work together"
+          lazy="load"
         />
         <article className="sectionsLetsWork__article">
           <h3>Let's work together</h3>
