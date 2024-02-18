@@ -8,7 +8,7 @@ const LoadingPage = ({ viewloading }) => {
         viewloading ? 'loadingPage__exit' : ''
       }`}
     >
-      <img src="logo2.webp" alt="creative art video" />
+      <img src="logo2.png" alt="creative art video" />
     </div>
   );
 };

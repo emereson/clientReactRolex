@@ -35,7 +35,7 @@ const Footer = () => {
         <p>FOLLOW OUR WORK ON OUR SOCIAL NETWORKS!</p>
       </section>
       <section className="footer__sectionTwo">
-        <img src="/logo2.webp" alt="" />
+        <img src="/logo2.png" alt="" />
         <a
           href="https://idotcode.com"
           target="_blank"
