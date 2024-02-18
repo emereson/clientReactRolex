@@ -98,24 +98,28 @@ const Header = () => {
           <a
             href="https://www.facebook.com/creativeartv?mibextid=sCpJLy"
             target="_blank"
+            aria-label="Facebook de Creative Art Video"
           >
             <i className="bx bxl-facebook-circle"></i>
           </a>
           <a
             href="https://www.instagram.com/creativeartvideo?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr"
             target="_blank"
+            aria-label="Instagram de Creative Art Video"
           >
             <i className="bx bxl-instagram-alt"></i>
           </a>
           <a
             href="https://www.tiktok.com/@rolexcav?_t=8jqzKPCjP4M&_r=1"
             target="_blank"
+            aria-label="TikTok de Creative Art Video"
           >
             <i className="bx bxl-tiktok"></i>
           </a>
           <a
             href="https://api.whatsapp.com/send/?phone=012135870282"
             target="_blank"
+            aria-label="WhatsApp de Creative Art Video"
           >
             <i className="bx bxl-whatsapp"></i>
           </a>
