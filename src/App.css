@@ -52,12 +52,12 @@
 }
 
 .top__container img {
-  width: 4vw;
+  width: 3.5vw;
   transform: rotateZ(90deg);
 }
 
 .top__container p {
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-weight: 600;
 }
 
