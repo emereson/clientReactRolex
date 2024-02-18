@@ -33,8 +33,8 @@ const CardSectionVideo = ({ video, index }) => {
         <iframe
           title={video.title}
           src={`${video.linkVideo}${openVideo ? '?autoplay=1' : ''}`}
-          width="100%"
-          height="100%"
+          width="90%"
+          height="90%"
           frameBorder="0"
         ></iframe>
       </div>

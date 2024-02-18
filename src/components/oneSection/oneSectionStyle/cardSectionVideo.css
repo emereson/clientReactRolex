@@ -52,7 +52,7 @@
     right: 1em;
     top: 0.5em;
     color: white;
-    font-size: 2.5em;
+    font-size: 3vw;
     z-index: 2;
     cursor: pointer;
 }
@@ -105,13 +105,17 @@
     font-size: 2.5em;
 }
 
-@media(max-width:800px) {
+@media(max-width:850px) {
     .cardSectionVideo__container {
         height: 35vh;
     }
 
     .cardSectionVideo__container h2 {
         font-size: 4vw;
+    }
+
+    .cardSectionVideo__videoContainer i {
+        font-size: 8.5vw;
     }
 }
 
@@ -122,5 +126,9 @@
 
     .cardSectionVideo__container h2 {
         font-size: 2vw;
+    }
+
+    .cardSectionVideo__videoContainer i {
+        font-size: 3.5vw;
     }
 }
