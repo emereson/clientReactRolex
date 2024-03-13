@@ -37,18 +37,22 @@ const OneSectionFrontPage = ({ section, setSelect, select, id }) => {
       />
       <div className="oneSectionFrontPage__articlesContainer">
         <article className="oneSectionFrontPage__videosContainer">
-          <ReactPlayer
-            ref={videoRef}
-            key={videoKey}
-            className="oneSectionFrontPage__video"
-            playing={isPlaying}
-            volume={0}
-            url={section.linkVideo}
-            controls={true}
-            loop={true}
-            width="100%"
-            height="100%"
-          />
+          {section && id ? (
+            <ReactPlayer
+              ref={videoRef}
+              key={videoKey}
+              className="oneSectionFrontPage__video"
+              playing={isPlaying}
+              volume={0}
+              url={section.linkVideo}
+              controls={true}
+              loop={true}
+              width="100%"
+              height="100%"
+            />
+          ) : (
+            ''
+          )}
         </article>
         <article className="oneSectionFrontPage__titleContainer">
           <h1>{section?.title}</h1>
