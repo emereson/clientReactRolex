@@ -9,6 +9,7 @@ import Sections from './pages/Sections';
 import OneSection from './pages/OneSection';
 import Contact from './pages/Contact';
 import LoadingPage from './pages/LoadingPage';
+import ScrollToTop from './hooks/ScrollToTop';
 
 function App() {
   const [viewTop, setViewTop] = useState(false);
@@ -39,6 +40,8 @@ function App() {
   return (
     <>
       <ToastContainer />
+      <ScrollToTop />
+
       <Header />
 
       <LoadingPage viewloading={viewloading} />
