@@ -44,7 +44,7 @@ const OneSectionFrontPage = ({ section, setSelect, select, id }) => {
               className="oneSectionFrontPage__video"
               playing={isPlaying}
               volume={0}
-              url={section.linkVideo}
+              url={section?.linkVideo}
               controls={true}
               loop={true}
               width="100%"
