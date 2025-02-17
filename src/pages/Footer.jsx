@@ -42,12 +42,12 @@ const Footer = () => {
       <section className="footer__sectionTwo">
         <img src="/logo2.png" alt="" />
         <a
-          href="https://idotcode.com"
+          href="https://you-developer.com"
           target="_blank"
           aria-label="Visitar a  desarrollador idotcode"
           role="link"
         >
-          con
+          whit
           <i className="bx bxs-heart"></i>
           by IdotCode
         </a>
@@ -55,8 +55,10 @@ const Footer = () => {
       <section className="footer__sectionThree">
         <Link to="contact"> GET IN TOUCH </Link>
         <p>
-          Booking 2024 and 2025 now. Reserve your date in advance,
-          give us the opportunity to be part of that special day.
+          Booking {new Date().getFullYear() - 1} and{' '}
+          {new Date().getFullYear()} now. Reserve your date in
+          advance, give us the opportunity to be part of that special
+          day.
         </p>
       </section>
     </div>
