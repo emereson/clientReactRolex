@@ -55,8 +55,8 @@ const Footer = () => {
       <section className="footer__sectionThree">
         <Link to="contact"> GET IN TOUCH </Link>
         <p>
-          Booking {new Date().getFullYear() - 1} and{' '}
-          {new Date().getFullYear()} now. Reserve your date in
+          Booking {new Date().getFullYear()} and{' '}
+          {new Date().getFullYear() + 1} now. Reserve your date in
           advance, give us the opportunity to be part of that special
           day.
         </p>
