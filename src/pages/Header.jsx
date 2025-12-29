@@ -65,7 +65,7 @@ const Header = () => {
               HOME
             </Link>
           </li>
-          {allSections?.sections.slice(0, 3).map((section) => (
+          {allSections?.sections?.slice(0, 3).map((section) => (
             <li key={section.id}>
               <Link
                 to={`/section/${section.id}`}
